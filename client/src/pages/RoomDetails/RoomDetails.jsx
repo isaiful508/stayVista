@@ -6,11 +6,14 @@ import { useQuery } from '@tanstack/react-query'
 import LoadingSpinner from '../../components/Shared/LoadingSpinner'
 import { useParams } from 'react-router-dom'
 import UseAxiosCommon from '../../hooks/UseAxiosCommon'
-import { axiosCommon } from './../../hooks/UseAxiosCommon';
+
+
 
 
 
 const RoomDetails = () => {
+
+
 const {id} = useParams();
   const axiosCommon = UseAxiosCommon();
 
@@ -27,11 +30,6 @@ const {id} = useParams();
   if (isLoading) return <LoadingSpinner />
 
   console.log(room);
-
-
-
-
-
 
 
 
