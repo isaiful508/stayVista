@@ -6,7 +6,8 @@ import useAuth from '../../../hooks/useAuth'
 import avatarImg from '../../../assets/images/placeholder.jpg'
 
 const Navbar = () => {
-  const { user, logOut } = useAuth()
+  const { user, logOut } = useAuth();
+  
   const [isOpen, setIsOpen] = useState(false)
 
   return (
